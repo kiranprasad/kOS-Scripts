@@ -3,11 +3,6 @@ CLEARSCREEN.
 local pitch is 90.
 FROM {local countdown is 10.} UNTIL countdown = 0 STEP {SET countdown to countdown - 1.} DO{
 PRINT countdown.
-WHEN countdown = 5 THEN
-{
-    SAS OFF.
-    PRINT "SAS Override: kOS in control".
-}
 WHEN countdown = 3 THEN
 {
     SET SHIP:CONTROL:MAINTHROTTLE to 1.
