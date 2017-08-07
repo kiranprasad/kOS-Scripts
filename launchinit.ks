@@ -1,6 +1,7 @@
 //Single stage to orbit (uncircularized)
 CLEARSCREEN.
 local pitch is 90.
+SAS OFF.
 FROM {local countdown is 10.} UNTIL countdown = 0 STEP {SET countdown to countdown - 1.} DO{
 PRINT countdown.
 WHEN countdown = 3 THEN
